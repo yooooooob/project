@@ -17,6 +17,8 @@ a {
 body {
     line-height: 1;
     color: #6a6a6a;
+    min-width: 1920px;
+    width: 100%;
 }
 
 /* 
