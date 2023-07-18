@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    line-height: 1; /* 💛 */
+    /* line-height 기본 설정값 : 1.25 
+    1.25값 보다 아래로하면 글자 높이여백 달라짐*/
+}
+
+header {
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+header>ul li {
+    display: inline-block;
+    margin-left: 20px;
+    /* 좌측으로 간격띄우기 */
+}
+
+/* 🍭.main_visual 메인비주얼 시작 */
+
+.main_visual {
+    height: 600px;
+    background-color: rgb(238, 219, 189);
+    color: maroon;
+    font-size: 60px;
+    text-align: center;
+    line-height: 600px;
+}
+
+/* 🍭.cont01 첫번째 콘텐츠 시작 */
+.cont01 {
+    width: 1440px;
+    margin: 100px auto;
+}
+
+.cont01 h3 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.cont01 .list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont01 .list div {
+    width: 464px;
+    height: 464px;
+    background-color: burlywood;
+    font-size: 30px;
+    text-align: center;
+    line-height: 464px;
+}
+
+/* 🍭.cont02 두번째 콘텐츠 시작 */
+
+.cont02{
+    background-color: antiquewhite;
+    padding: 100px 0;
+}
+.cont02 h3 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;    
+}
+
+.cont02 .list div{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(234, 206, 175);
+    border-radius: 50%;
+    margin: 0 20px;
+    line-height: 300px;
+}
+
+.cont02 .list{
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+}
+
+/* 텍스XM 포함 높이값은 제각각, 
+정확한 수치 파악 어려움 */
+
+
+/* 🍭footer 시작 */
+
+footer{
+    padding: 50px 0;
+    background-color: #333333c4;
+    color: rgba(255, 255, 255, 0.664);/* 불투명도로 대비조절 */
+    text-align: center;
+    font-size: 14px; /* 14px_16px 보편적으로 사용  */
+}
+

@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+}
+
+.border {
+    background-color: thistle;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.border div {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(170, 189, 207);
+    display: inline-block;
+    margin: 10px;
+    /*  line-height: 30px; */
+
+    display: inline-flex;  /* block요소 */ /* 💛 */
+ 
+    justify-content: center;/* 💛 */
+    
+    align-items: center;
+    /* flex성질! 단독사용불가, 플렉스나 인라인플렉스 사용시 사용가능함💛 => 수직가운데 정렬_line_height를 쓰지 않고 적용*/
+}
+/* 테두리 종류별로 적용 시작 */
+/* solid(기본선) , dotted, dashed(점선)=> 빈도 높게 사용! */
+
+.border div:first-child {
+    border: 10px solid #988c98;
+    /* 테두리 : 두께  스타일  컬러값 */
+    box-sizing: border-box;
+    /* 영역 안으로 테두리 생성  */
+}
+
+.border div:nth-child(2) {
+    border: 10px dotted #988c98;
+}
+
+
+.border div:nth-child(3) {
+    border: 10px dashed #988c98;
+}
+
+.border div:nth-child(4) {
+    border: 10px ridge #988c98;
+}
+
+.border div:nth-child(5) {
+    border: 10px inset #988c98;
+}
+
+.border div:nth-child(6) {
+    border: 10px outset #988c98;
+}
+
+.border div:nth-child(7) {
+    border: 10px double #988c98;
+}
+
+.border div:nth-child(8) {
+    border: 10px groove #988c98;
+}
+
+/* groove: 액자모양,ridge와 반대 */
+
+
+.border div:nth-child(9) {
+    border-top: 5px solid #988c98;
+    border-left: 5px dotted #988c98;
+    border-right: 3px dashed #988c98;
+    border-bottom: 5px groove #988c98;
+}
+
+/* 용어 정리 
+
+🎈align-items 속성: 콘텐츠 '아이템'의 '내부' "상하관계" 정렬 상태 설정!
+                    아이템의 높이 값을 기준으로 정렬!
+ (비교) align-content 속성: '컨테이너' 의 높이 값을 기준으로 정렬!
+
+ >>flex는 효율적으로 요소를 배치하거나 정렬 할 수 있는 레이아웃 방식.
+   이 속성은 한 줄만을 가지는 플렉스 박스에서는 효과가 없으며, 
+   두 줄 이상을 가지는 플렉스 박스에서만 효과있음!
+
+1. stretch : 기본 설정으로, 플렉스 요소의 높이가 플렉스 컨테이너의 높이와 같게 변경된 뒤 연이어 배치됩니다.
+2. flex-start : 플렉스 요소는 플렉스 컨테이너의 위쪽에 배치됩니다.
+3. flex-end : 플렉스 요소는 플렉스 컨테이너의 아래쪽에 배치됩니다.
+4. center : 플렉스 요소는 플렉스 컨테이너의 가운데에 배치됩니다.
+5. baseline : 플렉스 요소는 플렉스 컨테이너의 기준선(baseline)에 배치됩니다.
+
+ 더 알아보자.
+
+🎈justify-content 속성: 플렉스 요소의 수평 방향 정렬 방식을 설정.
+
+1. flex-start : 기본 설정값, 플렉스 요소는 플렉스 컨테이너의 앞쪽에서부터 배치.
+2. flex-end : 플렉스 요소는 플렉스 컨테이너의 뒤쪽에서부터 배치.
+3. center : 플렉스 요소는 플렉스 컨테이너의 가운데에서부터 배치.
+4. space-between : 플렉스 요소는 요소들 사이에만 여유 공간을 두고 배치.
+5. space-around : 플렉스 요소는 앞, 뒤, 그리고 요소들 사이에도 모두 여유 공간을 두고 배치.
+*/

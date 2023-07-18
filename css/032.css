@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto:wght@100;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Jua&display=swap');
+/* font-family: 'Jua', sans-serif;*/
+/* font-family: 'Fasthand', cursive; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+font-family: 'Fasthand', cursive;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    width: 1280px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list .item {
+    width: 620px;
+    height: 620px;
+    position: relative;
+    overflow: hidden;
+}
+
+.list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list .item div {
+    position: absolute;
+    left: 0px;
+    bottom: -500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: aliceblue;
+    padding: 20px;
+    transition: 0.8s;
+}
+
+.list .item:hover div {
+    bottom: 0;
+    /*  transition 후버는 올리기 전 부모에게*/
+}
+
+.list .item div h1 {
+    font-family: 'Fasthand', cursive;
+    /* 사용 폰트, 대체 될 폰트 */
+    font-weight: 100;
+    /* 두께는 px 단위 아님 , 확인잘하기*/
+}
+
+.list .item div p {
+    font-weight: 900;
+}

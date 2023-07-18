@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/* 폰트연결 */
+@font-face {
+    font-family: 'Hello Loved  Lovely Font';
+    src: url('font/HelloLovedLovelyFont.eot');
+    src: url('font/HelloLovedLovelyFont.eot?#iefix') format('embedded-opentype'),
+        url('font/HelloLovedLovelyFont.woff2') format('woff2'),
+        url('font/HelloLovedLovelyFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hello Loved  Lovely Font';
+    src: url('font/HelloLovedLovelyFont.eot');
+    src: url('font/HelloLovedLovelyFont.eot?#iefix') format('embedded-opentype'),
+        url('font/HelloLovedLovelyFont.woff2') format('woff2'),
+        url('font/HelloLovedLovelyFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 다폰트 , transfonter 사이트 참고 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+}
+
+header {
+    background-color: rgb(247, 243, 210);
+    position: relative;
+}
+
+header::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #a56f35;
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+
+header .inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header .inner .hd_top {
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .inner .hd_top h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+    height: 40px;    
+}
+
+header .inner .hd_top h1 a img {
+    height: 40px;
+}
+
+header .inner .hd_top ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header .inner nav {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-family: 'Hello Loved  Lovely Font';
+    
+}
+
+header .inner nav .gnb .depth01 {
+    display: inline-block;
+    text-align: center;
+}
+
+header .inner nav .gnb .depth01>a {
+    padding: 0 30px;
+}
+
+header .inner nav .gnb .depth01 {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+header .inner nav .gnb .depth01>a {
+    padding: 0 30px;
+    display: block;
+}
+
+header .inner nav .gnb .depth02 {
+    width: 100%;
+    background-color: rgb(248, 156, 64);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: none;
+}
+
+header .inner nav .gnb .depth02 li {
+    height: 40px;
+    line-height: 40px;
+}
+
+
+header .inner nav .gnb .deoth01:hover .depth02 {
+    display: block;
+}
+
+header .inner nav .gnb .depth02 li:hover {
+    background-color: #333;
+    color: #ff0606;
+
+}
+
+/* header .inner nav .gnb .depth01 .depth02{
+    width: 100%;
+    line-height: 2;
+    background-color: cadetblue;
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: none;
+} */
+
+/* header .inner>ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+header .bg {
+    width: 100%;
+    height: 130px;
+    background-color: powderblue;
+    color: white;
+    display: none;/* 선택자추가=>dispaly:block해주기 */
+
+
+header .bg span {
+    position: absolute;
+    left: -99999999px;
+}
+
+header:hover .bg {
+    display: block;
+}
+
+header:hover .inner nav .gnb .depth01 .depth02 {
+    display: block;
+}

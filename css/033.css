@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.event {
+    width: 1440px;
+    margin: 100px auto;
+}
+.event h3{
+    font-size: 40px;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative;
+}
+/* ::before 인라인태그 */
+.event h3::before{
+    content: '';
+    width: 100%;
+    height: 20px;
+    background-color: thistle;
+    display: block;
+    position: absolute;
+    left: 50%;/* 💛 */
+    bottom: 0;
+    transform: translateX(-50%); /* 💛 */
+    z-index: -1;
+    padding: 0px 15px; 
+    /* 패딩 좌우값 입력 -> 좌측값 50% 변경 >  transform: translateX(-50%); */
+
+}
+
+
+.event .list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.event .list .item {
+    width: 464px;
+    border-radius: 0 20px 20px;
+    overflow: hidden;   
+}
+
+.event .list .item > div {
+    height: 400px;
+    position: relative;    
+}
+
+.event .list .item > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event .list .item > div strong{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(239, 101, 15);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.event .list .item > div div{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.462);
+    color: aliceblue;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    padding: 20px;
+    box-sizing: border-box; 
+    /* 💛padding+padding 값 조절, 벗어난 영역 정리 */
+}
+.event .list .item >p{
+    background-color: rgba(0, 0, 0, 0.222);
+    color: aliceblue;
+    padding: 20px;
+
+}

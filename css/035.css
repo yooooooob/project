@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    line-height: 1;
+}
+
+header {
+    height: 100px;
+    line-height: 100px;
+    background-color: rgba(255, 228, 196, 0.593);
+    position: relative;
+    z-index: 1; /* 무조건! position과 함께 사용! */
+}
+
+header .inner {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .inner nav .gnb .depth01 {
+    display: inline-block;
+    vertical-align: top;
+    /* inline 사용시 적용가능! (block 사용불가!) */
+    /*  margin:0 30px; */
+    text-align: center;
+    position: relative;
+    /*  padding: 0 30px; <- 링크값 텍스트에만 적용*/
+
+
+}
+
+header .inner nav .gnb .depth01>a {
+    padding: 0 30px;
+    /* 링크값 확장 시키키위해 값 적용 */
+    display: block;
+}
+
+
+header .inner nav .gnb .depth01 .depth02 {
+    background-color: rgb(172, 146, 129);
+    color: white;
+    padding: 0 20px;
+    line-height: 1.8;
+    /*폰트사이즈(16)x1.8 +> 28.8px */
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+header .inner nav .gnb .depth01:hover .depth02 {
+    display: block;
+}
+
+header .inner>ul li {
+    display: inline-block;
+    margin-left: 0 20px;
+}
+
+/* 🍭.main_visual 시작 */
+
+.main_visual{
+    height: 700px;
+    position: relative;
+}
+
+.main_visual img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_visual h2{
+    width: 100%; /* 이미지영역에서 배치되기 위해 적용 */  
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: white;
+}

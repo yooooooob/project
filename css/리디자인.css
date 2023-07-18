@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #6a6a6a;
+}
+
+/* 
+
+header .inner .right_menu li{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+}
+
+/*---------------*/
+
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header .inner .hd_top {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+header .inner .hd_top img {
+    width: 140px;
+    height: 32px;
+    object-fit: cover;
+    line-height: 32px;
+    margin-top: 10px;
+}
+
+header .inner nav {
+    position: absolute;
+    top: 40px;
+    left: 750px;
+
+    color: white;
+}
+
+
+header .inner nav .gnb li {
+    display: inline-block;
+    width: 100px;
+}
+
+header .inner nav .gnb li ul {
+    display: none;
+}
+
+
+header .inner .right_menu {
+    position: absolute;
+    top: 40px;
+    right: 150px;
+    color: white;
+}
+
+header .inner .right_menu li {
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+/* 
+header .inner .right_menu li img{
+    width: 30px;
+    height: 25px;
+    object-fit: cover;
+} */
+
+#container .main_visual {
+    width: 100%;
+}
+
+#container .main_visual img {
+    width: 100%;
+}
+
+#container .main_visual h2 {
+    position: absolute;
+    top: 280px;
+    left: 37%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+
+#container .cont01 .title h3 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#container .cont01 .title p {
+    text-align: center;
+}
+
+#container .cont01 .title .list {
+    display: flex;
+    width: 1350px;
+    margin: 50px auto;
+    transition: 1s;
+}
+
+#container .cont01 .title .list div {
+    width: 270px;
+    height: 190px;
+    text-align: center;
+    border-right: 2px solid #1111;
+}
+
+#container .cont01 .title .list div:last-child {
+    width: 270px;
+    height: 190px;
+    text-align: center;
+    border: none;
+}
+
+#container .cont01 .title .list div a ul li:first-child {
+    font-size: 18px;
+    font-weight: bold;
+
+    margin: 10px 0;
+}
+
+#container .cont01 .title .list div:hover {
+    transform: translateY(-50px);
+
+    box-shadow: 10px 10px 20px rgba(165, 162, 165, 0.519);
+    /* transition: 1s; */
+
+}
+
+
+#container .sub_main_visual {
+    width: 100%;
+    position: relative;
+    transition: 1s;
+}
+
+#container .sub_main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#container .sub_main_visual a:hover {}
+
+#container .sub_main_visual .text_wrap {
+    position: absolute;
+    top: 15%;
+    right: 30%;
+    transform: translate(50%);
+    text-align: right;
+    color: white;
+}
+
+#container .sub_main_visual div p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#container .sub_main_visual h2 {
+    font-size: 60px;
+}
+
+/* #container .sub_main_visual .sub_btn{
+    position: relative;
+} */
+
+#container .sub_main_visual .sub_btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    margin-left: 240px;
+}
+
+#container .sub_main_visual .sub_btn .item {
+    width: 288px;
+    height: 90px;
+    display: inline-block;
+    background-color: rgba(21, 21, 21, 0.496);
+    text-align: center;
+    color: white;
+}
+
+#container .sub_main_visual .sub_btn .item:hover {
+    background-color: #002E7B;
+    color: white;
+}
+
+#container .sub_main_visual .sub_btn .item a {
+    height: 90px;
+    /* text-align: center; */
+    line-height: 90px;
+    /*  margin: 0 auto; */
+
+}
+
+#container .cont02 {
+    text-align: center;
+}
+
+#container .cont02 .title h3 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: darkblue;
+    margin-bottom: 76px;
+}
+
+#container .cont02 .item {
+    display: inline-block;
+    text-align: center;
+    margin: 20px 50px;
+    border-bottom: 3px solid #333;
+    padding: 40px 0;
+    font-size: 20px;
+    transition: 1s;
+
+}
+
+#container .cont02 .item:hover {
+    transform: translateY(-50px);
+    box-shadow: 5px 10px 20px rgba(165, 162, 165, 0.519);
+
+}
+
+#container .cont03 {
+    width: 1440px;
+    margin: 0 auto;
+    object-fit: cover;
+    padding: 50px;
+
+}
+
+#container .cont03 .RECRUIT {
+    display: flex;
+    position: relative;
+
+}
+
+#container .cont03 strong {
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* 리쿠르트  */
+
+#container .cont03 .RECRUIT .left_cont img {
+    width: 721px;
+    height: 344px;
+    object-fit: cover;
+}
+
+
+
+#container .cont03 .RECRUIT .left_cont {
+    text-align: left;
+    display: inline-block;
+    /*  margin: 60px 240px; */
+    position: relative;
+
+}
+
+
+#container .cont03 .RECRUIT>p {
+    margin-top: 15px;
+}
+
+#container .cont03 .RECRUIT .left_cont div {
+    position: absolute;
+    top: 44px;
+    left: 50px;
+    color: white;
+}
+
+#container .cont03 .RECRUIT .left_cont span {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    padding: 5px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+
+#container .cont03 .RECRUIT .right_cont {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#container .cont03 .RECRUIT .right_cont div {
+    width: 720px;
+    position: absolute;
+    top: 44px;
+    left: 50px;
+    color: white;
+}
+
+#container .cont03 .RECRUIT .right_cont span {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    /*  width: 100%; */
+    padding: 5px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    /* margin-left: 50px; */
+    /* transform: translate(0,-50%); */
+}
+
+#container .cont03 .RECRUIT {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#container .cont03 .RECRUIT img {
+    transition: all 0.2s linear;
+
+}
+
+#container .cont03 .RECRUIT img:hover {
+    transform: scale(1.4);
+}
+
+/********************* 푸터시작**********************/
+
+footer {
+    width: 100%;
+    background-color: rgb(20, 20, 39);
+    padding: 60px 0px;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+    color: white;
+}
+
+footer ul li {
+    display: inline-block;
+
+}
+
+footer section .footer_box {
+    background-color: #745A3C;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+footer section ul li {
+    padding: 20px;
+    text-align: right;
+    justify-content: space-betweens;
+}
+
+footer section span{
+
+}
+
+footer section strong{
+    font-size: 30px;
+}
